@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script src="./src/index.js" defer></script>
+    <title>Profit or Loss in Stocks</title>
+  </head>
+  <body>
+    <main class="container container-centered">
+      <div>
+        <h1>
+          Profit or Loss in Stocks
+        </h1>
+        <p>
+          Check how much you make profit or how much you loss for stocks you
+          purchased without real time system. Give stock buying price, how many
+          stocks brought and today's price and get to know about your forecast.
+        </p>
+      </div>
+      <div class="input-div">
+        <input
+          type="number"
+          min="1"
+          id="initialPrice"
+          placeholder="Enter cost price here..."
+          name="Intial Price"
+        />
+
+        <input
+          type="number"
+          min="1"
+          id="quantity"
+          name="Quantity"
+          placeholder="Enter stocks quantity here..."
+          step="1"
+        />
+
+        <input
+          type="number"
+          min="1"
+          id="currentPrice"
+          name="Current Price"
+          placeholder="Enter today's price  here..."
+        />
+        <button type="submit" id="tellMe">Give Me Update</button>
+      </div>
+      <div class="output-div">
+        <h3 id="message"></h3>
+      </div>
+    </main>
+  </body>
+</html>

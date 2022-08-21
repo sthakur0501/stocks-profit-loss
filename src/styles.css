@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  border: 5px solid rgb(0, 0, 0);
+  padding: 1rem 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1ch;
+  box-shadow: -25px 25px black;
+}
+
+.container-centered {
+  max-width: 40%;
+  margin: auto;
+}
+
+div {
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+  gap: 1ch;
+  box-shadow: -10px 4px black;
+}
+
+div h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+h1,
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+div p {
+  text-align: center;
+}
+
+div input {
+  width: 40%;
+  margin: auto;
+  border: 2px solid black;
+  box-shadow: -2px 1px black;
+}
+
+div button {
+  cursor: pointer;
+  width: 43%;
+  margin: auto;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: -2px 2px black;
+}
+
+div button:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+input {
+  padding: 0.5rem;
+}
+
+button {
+  padding: 0.5rem;
+}
+
+.output-div {
+  border: none;
+}
+
+@media (max-width: 1200px) {
+  .container-centered {
+    max-width: 50%;
+  }
+
+  div input {
+    width: 60%;
+    margin: auto;
+    box-shadow: -3px 3px black;
+    font-size: medium;
+  }
+
+  div button {
+    width: 50%;
+    box-shadow: -4px 4px black;
+    font-size: large;
+  }
+
+  div p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-centered {
+    max-width: 60%;
+  }
+
+  div input {
+    width: 60%;
+    margin: auto;
+    box-shadow: -3px 3px black;
+    font-size: medium;
+  }
+
+  div button {
+    width: 50%;
+    box-shadow: -4px 4px black;
+    font-size: large;
+  }
+
+  div p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-centered {
+    max-width: 60%;
+  }
+
+  div input {
+    width: 80%;
+    margin: auto;
+    box-shadow: -3px 3px black;
+    font-size: medium;
+  }
+
+  div button {
+    width: 60%;
+    box-shadow: -4px 4px black;
+    font-size: large;
+  }
+
+  div p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-centered {
+    max-width: 100%;
+  }
+
+  .container {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1ch;
+    box-shadow: -5px 5px black;
+  }
+
+  div {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 1ch;
+    box-shadow: -7px 4px black;
+  }
+
+  div h1 {
+    text-align: center;
+  }
+
+  div p {
+    text-align: left;
+  }
+
+  div input {
+    width: 90%;
+    margin: auto;
+    box-shadow: -1px 1px black;
+  }
+
+  div button {
+    width: 80%;
+    border: 2px solid black;
+    box-shadow: -2px 2px black;
+    font-size: large;
+  }
+}
